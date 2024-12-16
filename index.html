@@ -11,20 +11,60 @@
             padding: 20px;
             background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
-            text-align: center;
-            border-bottom: 2px solid #666;
-            padding-bottom: 10px;
+        header, nav, main, footer {
+            margin-bottom: 20px;
         }
-        p {
-            line-height: 1.6;
-            color: #666;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to FOL-Test</h1>
-    <p>This is a simple test repository.</p>
+    <header>
+        <h1>FOL-Test Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to FOL-Test</h2>
+            <p>This is a simple test repository demonstrating GitHub workflows and basic web development.</p>
+        </section>
+        
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>FOL-Test is a demonstration project to showcase repository management, HTML, and CSS skills.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 FOL-Test Project. All rights reserved.</p>
+        <p>Contact: example@email.com</p>
+    </footer>
 </body>
 </html>
